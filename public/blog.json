@@ -1,6 +1,6 @@
 [
     {
-        "cover_img": "https://ibb.co/VJhTVRk",
+        "cover_img": "https://i.ibb.co/Dz6Q4hj/Rectangle-2-2.png",
         "course_name": "Introduction to C Programming",
         "course_description": "An introductory course to the C programming language.",
         "price": 15000,
@@ -8,7 +8,7 @@
         "credit_hours": "1hr"
     },
     {
-        "cover_img": "https://ibb.co/2W88Y1z",
+        "cover_img": "https://i.ibb.co/HBNNpfc/Rectangle-2-3.png",
         "course_name": "Introduction to Algorithms",
         "course_description": "Exploration of fundamental algorithms and data structures.",
         "price": 25000,
@@ -16,7 +16,7 @@
         "credit_hours": "2hr"
     },
     {
-        "cover_img": "https://ibb.co/3M8CWRL",
+        "cover_img": "https://i.ibb.co/jWxrGJ1/Rectangle-2-4.png",
         "course_name": "Introduction to C++",
         "course_description": "A beginner's guide to the C++ programming language.",
         "price": 10000,
@@ -24,7 +24,7 @@
         "credit_hours": "10hr"
     },
     {
-        "cover_img": "https://ibb.co/QP8DCqv",
+        "cover_img": "https://i.ibb.co/qN0JW4Y/Rectangle-3.png",
         "course_name": "Data Structures",
         "course_description": "In-depth study of data structures and their applications.",
         "price": 35000,
@@ -32,7 +32,7 @@
         "credit_hours": "5hr"
     },
     {
-        "cover_img": "https://ibb.co/QP8DCqv",
+        "cover_img": "https://i.ibb.co/B4YQ4gG/Rectangle-2.png",
         "course_name": "Python Programming",
         "course_description": "Introduction to Python programming language and its use in data science.",
         "price": 19000,
@@ -40,7 +40,7 @@
         "credit_hours": "5hr"
     },
     {
-        "cover_img": "https://ibb.co/LCKVcSZ",
+        "cover_img": "https://i.ibb.co/7gWTPGK/Rectangle-2-5.png",
         "course_name": "Software Engineering",
         "course_description": "Principles and practices of software development.",
         "price": 23000,
@@ -48,24 +48,24 @@
         "credit_hours": "2hr"
     },
     {
-        "cover_img": "https://ibb.co/mhrKWk1",
-        "course_name": "AWS Cloud Computing",
+        "cover_img": "https://i.ibb.co/ssp4Ynk/Rectangle-3-1.png",
+        "course_name": "AWS,Cloud Computing",
         "course_description": "Exploration of cloud computing with Amazon Web Services (AWS).",
         "price": 35000,
         "bookmark_icon": "bookmark7.png",
         "credit_hours": "5hr"
     },
     {
-        "cover_img": "https://ibb.co/bsLKWRQ",
-        "course_name": "Database Management",
+        "cover_img": "https://i.ibb.co/rt6z6BN/Rectangle-2-1.png",
+        "course_name": "Database (MySQL)",
         "course_description": "Introduction to database design and management.",
         "price": 19000,
         "bookmark_icon": "bookmark8.png",
         "credit_hours": "5hr"
     },
     {
-        "cover_img": "https://ibb.co/bzx1Kg6",
-        "course_name": "Problem Solving",
+        "cover_img": "https://i.ibb.co/KGZfMCM/Rectangle-2-6.png",
+        "course_name": "Problem-Solving Part",
         "course_description": "Developing problem-solving skills and algorithmic thinking.",
         "price": 23000,
         "bookmark_icon": "bookmark9.png",

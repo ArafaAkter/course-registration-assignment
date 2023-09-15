@@ -1,0 +1,58 @@
+body{
+    background: #F3F3F3;
+    color: black;
+}
+
+.card{
+    width: 280px;
+    height: 390px;
+    background-color:white;
+    border-radius: 8px;
+}
+.img{
+    width: 250px;
+    margin-top: 10px;
+}
+.card-title{
+   
+    text-align: left;
+    margin-left: 20px;
+    
+}
+.card-description{
+   
+    padding: 2px;
+    text-align: left;
+    margin-left: 20px;
+     
+}
+.card-footer{
+   
+    display: flex;
+    justify-content: space-around;
+}
+.btn{
+    border-radius: 10px;
+    border: 1px solid #2F80ED;
+    background: #2F80ED;
+    width: 230px;
+    
+}
+.home-container{
+    display: flex;
+    justify-content: space-around;
+    gap: 5px;
+}
+.card-container{
+  
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   gap: 10px;
+
+}
+.cart{
+    width: 280px;
+    height: 390px;
+    background-color:white;
+    border-radius: 8px;
+}
