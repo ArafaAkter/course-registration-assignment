@@ -1,7 +1,10 @@
-
 import { useEffect } from "react";
 import"./Home.css";
 import { useState } from "react";
+
+
+
+
 const Home = () => {
 
 const[allCourse,setAllcourse] = useState([]);
@@ -12,7 +15,7 @@ const[allCourse,setAllcourse] = useState([]);
         .then(data => setAllcourse(data));
 
     },[])
-    console.log(allCourse);
+console.log(allCourse);
     return (
       <div className="container">
        <div className="home-container">
@@ -21,15 +24,16 @@ const[allCourse,setAllcourse] = useState([]);
            allCourse.map(course =>(
 
             // eslint-disable-next-line react/jsx-key
-            <div className="card">
+            <div key={course.id} className="card">
             <div className="card-img">
-                <img className="img" src="https://i.ibb.co/Dz6Q4hj/Rectangle-2-2.png" alt="" /> 
+                <img className="img" src={course.cover_img}  /> 
+                
             </div>
-            <h4 className="card-title">Introduction to C Programming</h4>
-            <p className="card-description"><small>An introductory course to the C programming language.</small></p>
+            <h4 className="card-title">{course.course_name}</h4>
+            <p className="card-description"><small>{course.course_description}</small></p>
             <div className="card-footer">
-                <p> $ Price : 15000</p>
-                <p>Credit:1hr</p>    
+                <p> $ Price : {course.price}</p>
+                <p>Credit : {course.credit_hours}</p>    
             </div>
             <button className="btn">Select</button>
         </div> 
