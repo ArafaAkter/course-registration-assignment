@@ -7,10 +7,10 @@ function App() {
 
   return (
     <>
-   
+    
+    <h1>Course Registration</h1>
+
     <Home></Home>
-   
-     
     </>
   )
 }
