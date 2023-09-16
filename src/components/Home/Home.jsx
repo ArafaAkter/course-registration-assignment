@@ -9,7 +9,8 @@ const Home = () => {
 
 const[allCourse,setAllcourse] = useState([]);
 const[selectedCourse,setSelectedCourse] = useState([]);
-const [totalCreditHours,setTotalCreditHours] =useState(0);
+const [totalCreditHours,setTotalCreditHours] = useState(0);
+const[totalRemaining,setTotalRemaining] = useState(0);
 
     useEffect(() =>{
         fetch("./blog.json")
@@ -25,7 +26,7 @@ const [totalCreditHours,setTotalCreditHours] =useState(0);
 
         if(isExist){
 
-         toast("already exist")
+         toast("Already Exist")
          return;
   
         }
@@ -34,6 +35,8 @@ const [totalCreditHours,setTotalCreditHours] =useState(0);
                selectedCourse.forEach((course) => {
                 count = parseFloat(count) + parseFloat(course.credit_hours);
             });
+            const totalRemaining = 20 - count;
+            setTotalRemaining(totalRemaining);
     
             setTotalCreditHours(count);  
             setSelectedCourse([...selectedCourse,course]);
@@ -72,7 +75,8 @@ const [totalCreditHours,setTotalCreditHours] =useState(0);
           
               <Cart 
               selectedCourse = {selectedCourse}
-              totalCreditHours ={totalCreditHours}
+              totalCreditHours ={totalCreditHours} 
+              totalRemaining = {totalRemaining}
                ></Cart>
             </div>
             

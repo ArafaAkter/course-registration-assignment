@@ -1,11 +1,11 @@
 // import React from 'react';
 import"./Cart.css";
 // eslint-disable-next-line react/prop-types
-const Cart = ({selectedCourse,totalCreditHours}) => {
+const Cart = ({selectedCourse,totalCreditHours,totalRemaining}) => {
     
     return (
         <div className="cart-info">
-            <h3>Credit Hour Remaining :</h3>
+            <h3>Credit Hour Remaining :{totalRemaining}</h3>
            <h3>Course Name</h3> 
            {
             // eslint-disable-next-line react/prop-types
