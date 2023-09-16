@@ -5,7 +5,7 @@ const Cart = ({selectedCourse,totalCreditHours,totalRemaining}) => {
     
     return (
         <div className="cart-info">
-            <h3>Credit Hour Remaining :{totalRemaining}</h3>
+            <h3>Credit Hour Remaining :{totalRemaining} hr</h3>
            <h3>Course Name</h3> 
            {
             // eslint-disable-next-line react/prop-types

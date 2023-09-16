@@ -26,7 +26,7 @@ const[totalRemaining,setTotalRemaining] = useState(0);
 
         if(isExist){
 
-         toast("Already Exist")
+         toast("This Course Already Exist")
          return;
   
         }
@@ -36,10 +36,15 @@ const[totalRemaining,setTotalRemaining] = useState(0);
                 count = parseFloat(count) + parseFloat(course.credit_hours);
             });
             const totalRemaining = 20 - count;
-            setTotalRemaining(totalRemaining);
-    
-            setTotalCreditHours(count);  
-            setSelectedCourse([...selectedCourse,course]);
+            if(count >20){
+               return toast("You can select only 20 credit.")
+            }
+            else{
+                setTotalCreditHours(count);
+                setTotalRemaining(totalRemaining);
+                setSelectedCourse([...selectedCourse,course]);
+            } 
+            
             
         }
 
