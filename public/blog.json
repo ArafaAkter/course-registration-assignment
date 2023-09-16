@@ -4,7 +4,6 @@
         "course_name": "Introduction to C Programming",
         "course_description": "An introductory course to the C programming language.",
         "price": 15000,
-        "bookmark_icon": "bookmark1.png",
         "id" : 1,
         "credit_hours": "1hr"
     },
@@ -13,7 +12,6 @@
         "course_name": "Introduction to Algorithms",
         "course_description": "Exploration of fundamental algorithms and data structures.",
         "price": 25000,
-        "bookmark_icon": "bookmark2.png",
         "id" : 2,
         "credit_hours": "2hr"
     },
@@ -22,7 +20,6 @@
         "course_name": "Introduction to C++",
         "course_description": "A beginner's guide to the C++ programming language.",
         "price": 10000,
-        "bookmark_icon": "bookmark3.png",
         "id" : 3,
         "credit_hours": "10hr"
     },
@@ -31,7 +28,6 @@
         "course_name": "Data Structures",
         "course_description": "In-depth study of data structures and their applications.",
         "price": 35000,
-        "bookmark_icon": "bookmark4.png",
         "id" : 4,
         "credit_hours": "5hr"
     },
@@ -40,7 +36,6 @@
         "course_name": "Python Programming",
         "course_description": "Introduction to Python programming language and its use in data science.",
         "price": 19000,
-        "bookmark_icon": "bookmark5.png",
         "id" : 5,
         "credit_hours": "5hr"
     },
@@ -49,7 +44,6 @@
         "course_name": "Software Engineering",
         "course_description": "Principles and practices of software development.",
         "price": 23000,
-        "bookmark_icon": "bookmark6.png",
         "id" : 6,
         "credit_hours": "2hr"
     },
@@ -58,7 +52,6 @@
         "course_name": "AWS,Cloud Computing",
         "course_description": "Exploration of cloud computing with Amazon Web Services (AWS).",
         "price": 35000,
-        "bookmark_icon": "bookmark7.png",
         "id" : 7,
         "credit_hours": "5hr"
     },
@@ -67,7 +60,6 @@
         "course_name": "Database (MySQL)",
         "course_description": "Introduction to database design and management.",
         "price": 19000,
-        "bookmark_icon": "bookmark8.png",
         "id" : 8,
         "credit_hours": "5hr"
     },
@@ -76,7 +68,6 @@
         "course_name": "Problem-Solving Part",
         "course_description": "Developing problem-solving skills and algorithmic thinking.",
         "price": 23000,
-        "bookmark_icon": "bookmark9.png",
         "id" : 9,
         "credit_hours": "2hr"
     }
