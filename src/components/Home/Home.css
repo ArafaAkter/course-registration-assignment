@@ -59,3 +59,10 @@ body{
     border-radius: 8px;
     padding: 30px;
 }
+.list{
+   
+    list-style: decimal;
+}
+.cart-info{
+    text-align: left;
+}

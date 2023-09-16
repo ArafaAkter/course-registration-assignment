@@ -8,7 +8,8 @@ import 'react-toastify/dist/ReactToastify.css';
 const Home = () => {
 
 const[allCourse,setAllcourse] = useState([]);
-const[selectedCourse,setSelectedCourse] = useState([])
+const[selectedCourse,setSelectedCourse] = useState([]);
+const [totalCreditHours,setTotalCreditHours] =useState(0);
 
     useEffect(() =>{
         fetch("./blog.json")
@@ -18,17 +19,28 @@ const[selectedCourse,setSelectedCourse] = useState([])
     },[])
 
     const handleSelectCourse = (course) =>{
-        const isExist = selectedCourse.find(item=>item.id === course.id)
+        const isExist = selectedCourse.find(item=>item.id === course.id);
+
+        let count = course.credit_hours;
+
         if(isExist){
-        return toast("already exist")
-           
+
+         toast("already exist")
+         return;
+  
         }
         else{
-            setSelectedCourse([...selectedCourse,course]);
-        }
-        
-    }
 
+               selectedCourse.forEach((course) => {
+                count = parseFloat(count) + parseFloat(course.credit_hours);
+            });
+    
+            setTotalCreditHours(count);  
+            setSelectedCourse([...selectedCourse,course]);
+            
+        }
+
+    };
     
     return (
       <div className="container">
@@ -49,7 +61,7 @@ const[selectedCourse,setSelectedCourse] = useState([])
                 <p> $ Price : {course.price}</p>
                 <p>Credit : {course.credit_hours}</p>    
             </div>
-            <button onClick={()=>handleSelectCourse(course)} className="btn">Select</button>
+            <button onClick={()=> handleSelectCourse(course)} className="btn">Select</button>
             <ToastContainer />
         </div> 
            )) 
@@ -57,8 +69,13 @@ const[selectedCourse,setSelectedCourse] = useState([])
             
             </div>
             <div className="cart">
-              <Cart selectedCourse ={selectedCourse}></Cart>
+          
+              <Cart 
+              selectedCourse = {selectedCourse}
+              totalCreditHours ={totalCreditHours}
+               ></Cart>
             </div>
+            
        </div>
       </div>
     );
