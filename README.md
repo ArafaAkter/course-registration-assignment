@@ -17,7 +17,7 @@ Currently, two official plugins are available:
 
 - Feature - 2 : By clicking select button student can select one course at a time. If a student selects a course and repeats the course again  she/he will see a toast
 
--Feature - 3 : By clicking select button student can see their total credit.
+-Feature - 3 : By clicking select button student can see their total credit. 
     
   
 
