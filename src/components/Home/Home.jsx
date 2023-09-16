@@ -2,6 +2,8 @@ import { useEffect } from "react";
 import"./Home.css";
 import { useState } from "react";
 import Cart from "../Cart/Cart";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Home = () => {
 
@@ -16,7 +18,15 @@ const[selectedCourse,setSelectedCourse] = useState([])
     },[])
 
     const handleSelectCourse = (course) =>{
-        setSelectedCourse([...selectedCourse,course]);
+        const isExist = selectedCourse.find(item=>item.id === course.id)
+        if(isExist){
+        return toast("already exist")
+           
+        }
+        else{
+            setSelectedCourse([...selectedCourse,course]);
+        }
+        
     }
 
     
@@ -40,6 +50,7 @@ const[selectedCourse,setSelectedCourse] = useState([])
                 <p>Credit : {course.credit_hours}</p>    
             </div>
             <button onClick={()=>handleSelectCourse(course)} className="btn">Select</button>
+            <ToastContainer />
         </div> 
            )) 
         }

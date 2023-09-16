@@ -1,5 +1,6 @@
 // import React from 'react';
 import"./Cart.css";
+// eslint-disable-next-line react/prop-types
 const Cart = ({selectedCourse}) => {
     
     return (
